@@ -1,0 +1,21 @@
+#sliders{
+	width: 30vw;
+	margin:auto;
+	display: inline-block;
+	overflow: hidden;
+}
+.slider-box{
+  width:40vw;
+  overflow: hidden;
+}
+.slider{
+  position:relative;
+  width:10000px;
+  overflow: hidden;
+}
+.slider img{
+  width: 40vw;
+  height: 40vw;
+  float: left;
+  z-index: 0;
+}

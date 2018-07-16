@@ -1,0 +1,25 @@
+#content .subtabs .r-curl {
+    right: -2px;
+}
+
+#domen_list #all_tlds,
+#domen_list #popular_tlds,
+#domen_list .main_tld,
+#domen_list .all_tld {
+    position: relative;
+    left: -0.333em;
+    margin-right: 0;
+}
+
+#domen_list #domens_table td {
+    padding: 0 0 0 1.3636em;
+    line-height: 1.6em;
+}
+
+#content #domen_list #right_banner img {
+    width: 131px;
+}
+
+#domen_list img.marker {
+    margin-top: 0.2em;
+}

@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Корзина</title>
+	<link href="css/style.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="image/icon/mech.png" type="image/png">
+	
+	 
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="js/index.js"></script>
+	<script src="js/get.js"></script>
+	
+	
+
+	
+</head>
+<body >
+	<div id="div_waiting"></div>
+<!-- header -->
+	<header id="header">
+		<a href="index.html"><div id="logo"></div></a>
+		<div id="search"> 
+            <input id="input_search" name="" placeholder="поиск"  />
+            <div id="icon_search"></div>
+		</div>
+		<div id="primary-menu">
+			<div class="h_menu"><a href="index.html">О компании</a></div>	
+			<div class="h_menu"><a href="delivery.html">Доставка</a></div>		
+			<div class="h_menu"><a href="payment.html">Оплата</a></div>	
+			<div class="h_menu"><a href="contact.html">Контакты</a></div>	
+		</div>
+		<a href="basket.html">
+			<div id="basket">
+				<div>
+					<p id="total_tovar">0</p>
+				</div>
+			</div>
+		</a>
+
+		<div id="clear"></div>
+	</header>
+<!-- /header -->
+
+<!-- container -->
+	<div id="container">
+		<div id="content_b">
+			
+			<div id="the_basket">
+			<div id="progBar">
+				<div class="progressBars"><p><b>Шаг 1.</b> Контактные данные</p></div>
+				<div ><p><b>Шаг 2.</b> Доставка</p></div>
+				<div><p><b>Шаг 3.</b> Оплата</p></div>
+			</div>
+			<div id="totalBasket">
+			
+			
+					<!--<div class="b_default">
+						<h2>Ваша корзина:</h2>
+						<div id="b_default_c">
+							<p>Ваша корзина пуста.</p>
+						</div>
+						
+					</div>
+				
+					<div class="b_product">
+						<div id="b_close"></div>
+						<div class="b_info_prod">
+							<div id="b_photo_prod"></div>
+							<div class="b_more_info">
+								<div id="b_name_prod">Название продуккта если длинное будет то так будет ваще збс</div>
+								<div id="b_price_prod"><p>2000руб.</p></div>
+							</div>
+						</div>
+						
+						
+						<div class="b_total_prod">
+							<form>
+								<fieldset>
+									<div><label>Кол-во: </label></div>
+									<div><input type="number" min="1" max="100" step="1" value="2"/></div>
+								</fieldset>
+							</form>
+						</div>	
+					</div>
+
+					<div id="price_update">
+						<div id="clear_basket">
+							<p>Очистить</p>
+							<div id="b_icon_clear"></div>
+						</div>
+						<div id="update_total_price">
+							<p>Пересчитать</p>
+							<div id="b_icon_update"></div>
+						</div>
+
+					</div>
+					<div id="b_total_pice">
+						<div>Количество товаров: <span>1 шт.</span></div>
+						<div id="b_total">Итого: <span>2000руб.</span></div>
+					</div>-->
+			</div>
+			<div id="b_contactForm">
+				<p>Оформление заказа</p>
+				<div id="b_of_form">
+				
+						<form>
+							<fieldset>
+								<div id="fb_form">
+									<div class="fb_lbl" style="margin-left:15%;">Имя:</div>
+									<div class="fb_input"><input type="text" name="name" /required></div>
+								
+								</div>
+								<div id="fb_form">
+									<div class="fb_lbl" style="margin-left:15%;">E-mail: </div>
+								
+									<div class="fb_input"><input type="email" name="email"  /required></div>
+								</div>
+								<div id="fb_form">
+									<div  class="fb_lbl" style="margin-left:15%;">Телефон: </div>
+							
+									<div class="fb_input"><input type="tel" name="phone" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" maxlength="11" placeholder="+7(---) --- -- --" /required></div>
+								</div>							
+									
+										
+							</fieldset>
+
+							<input type="submit" value="Продолжить" style="float:right;margin-right:15%;" id="fb_btn"/>
+						</form>		
+					</div>
+		
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- /container -->
+
+<!-- footer -->
+	<footer>
+		<!-- save_price -->
+
+			<div id="save_price">
+				<div id="save_icon">
+					<a href="#"><div id="s_icon"></div></a>
+					<div id="text_icon">
+						<p>Для того чтобы, подробнее ознакомиться с расценками товаров,
+						   можно <a href="">скачать прайс-лист.</a></p>
+					</div>
+				</div>
+			</div>
+	 	
+		 <!--/save_price -->
+	<div id="footer">
+			<div id="f_info">
+			<div id="f_logo"></div>
+			<div id="f_icon_fone"></div>
+			<div id="f_phone">
+				8 (34139) 3-50-42 
+			</div>
+			<div id="f_icon_mail"></div>
+			<div id="f_mail">
+				<a href="#">agro@tractor.ru</a>
+			</div>
+			<div id="secondary-menu">
+				<div class="f_menu"><a href="index.html">О компании</a></div>	
+				<div class="f_menu"><a href="delivery.html">Доставка</a></div>		
+				<div class="f_menu"><a href="payment.html">Оплата</a></div>	
+				<div class="f_menu"><a href="contact.html">Контакты</a></div>	
+			</div>
+		</div>
+
+		
+		<div id="black_line"></div>
+		<div id="copyright">
+			<p>Кибермаркет АгроЗапчасти © 2016-2017 Интернет-магазин "АгроЗапчасти": сельхоз запчасти, 
+			инструменты, материалы, РТИ.</p>
+		</div>
+		</div>
+	
+		<div class="clear"></div>
+		
+	</footer>
+
+
+
+<!-- /footer -->
+
+
+
+	
+</body>
+</html>

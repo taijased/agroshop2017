@@ -1,0 +1,44 @@
+div {zoom: 1;}
+
+/* header_top */
+#header_top {
+    position: relative;
+    z-index: 100;
+}
+
+#header_top .menu ul {overflow: hidden; float: left;}
+#header_top .menu ul li {float: left; width: 100%;}
+
+#whois_dom_top label {
+    padding-top: 0.45em;
+}
+/* /header_top */
+
+/* header */
+#header-password {
+    width: 8.1em;
+}
+
+#regru-description li {
+    float: left;
+}
+/* /header */
+
+/* sidebar */
+#subscribe .double_border {
+    padding: 0 0.2em 0.4em 0.2em;
+}
+/* /sidebar */
+
+
+/*** glamor ***/
+
+.white_popup .t {
+    padding: 0!important;
+    height: 9px;
+}
+
+.white_popup .b, .white_popup .b-r {
+    padding: 0 100px 0 0 !important;
+    height: 18px;
+}

@@ -1,0 +1,185 @@
+body {width: expression(document.documentElement.clientWidth < 1002? '1002px': '100%');}
+div.content-block {width: 1002px;}
+body.wide div.content-block {margin: 0; width: 100%;}
+
+div {zoom: 1;}
+
+#wrapper {height: auto !important;}
+
+#content-ie6-fix {
+    font-size: 0;
+    height: 0;
+    padding: 0.1667em 0 0 0;
+    clear: both;
+    margin: -150em 0 0 0;
+}
+
+/* header_top */
+#header_top {
+    position: relative;
+    z-index: 100;
+}
+
+#whois_dom_top label {
+    padding-top: 0.45em;
+}
+
+#whois_dom_top #dsubmit {
+    margin-left: 0.75em;
+}
+
+#header_top .submenu div {float: left;}
+#header_top .submenu ul {width: 15em !important;}
+#header_top .submenu li {width: 100% !important;}
+#header_top .menu ul .first, #header_top .menu ul .first span,
+#header_top .menu ul .last, #header_top .menu ul .last span {
+    font-size: 0;
+    height: 2px !important;
+    min-height: 2px !important;
+}
+#header_top .submenu a {zoom: 1;}
+
+
+
+#header_top #header_options div a {
+    float: left;
+}
+/* /header_top */
+
+#regru-description li {
+    float: left;
+}
+
+
+/* sidebar */
+#sidebar {
+    height: 0;
+    margin-bottom: -0.1667em;
+}
+
+#sidebar .block h2 span {
+    right: -1px;
+}
+
+#sidebar #uslugi a, #sidebar #info a, #sidebar #info li, #sidebar #consult li {
+    zoom: 1;
+}
+
+#sidebar #uslugi img {
+    margin-left: 0.25em;
+}
+
+#sidebar .content {
+    margin-top: -0.333em;
+    /*position: relative;
+    bottom: 0.333em;*/
+}
+
+#sidebar .block {
+    /*margin-bottom: 1px;*/
+}
+
+#sidebar .block .bottom {
+    font-size: 0;
+    height: 6px;
+    /*position: relative;
+    top: -0.333em;*/
+}
+
+#sidebar .block .bottom span {
+    width: 39px;
+    height: 6px;
+}
+
+#paysys .content a {
+    width: 32%;
+}
+
+#paysys .content br {
+    display: block;
+    clear: left;
+}
+
+#subscribe .double_border {
+    padding: 0 0.2em 0.4em 0.2em;
+    width: 12.75em;
+} 
+/* /sidebar */
+
+/* footer */
+#footer .info {
+    position: relative;
+    left: -1em;
+}
+/* /footer */
+
+
+/* content */
+
+#content {
+    position: relative;
+    left: -3px;
+    margin-right: -3px;
+}
+
+.content-banner {
+    /*left: -4px;
+    margin-right: 6px;*/
+    /*padding-top: 0.7em;
+    margin-top: -0.7em;*/
+    height: 122px;
+}
+
+.content-banner img, .content-banner object {
+    height: 122px;
+}  
+
+.content-banner-rt, .content-banner-rb {
+    right: -1px;
+}
+
+.content-banner-lb, .content-banner-rb {
+    bottom: -7px;
+}
+
+.content-banner-lt, .content-banner-lb,
+.content-banner-rt, .content-banner-rb {
+    behavior: url('js/iepngfix.htc');
+}
+
+/*#private-office {
+    left: -3px;
+    margin-right: -3px;
+}*/
+
+
+/*** glamor ***/
+
+.white_popup .t {
+    padding: 0!important;
+    height: 9px;
+}
+
+.white_popup .b, .white_popup .b-r {
+    padding: 0 100px 0 0 !important;
+    height: 18px;
+}
+
+.white_popup .lt, .white_popup .rt, .white_popup .lb, .white_popup .rb {
+    background-image: url('../i/new_20090512/white-popup-corners-ie6.png');
+}
+
+.white_popup .t {
+    background: transparent none;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.white_popup .b, .white_popup .b-r {
+    background: transparent none;
+    border-top: 1px solid #dfdfdf;
+}
+
+.slider .ball {
+    background-image: url('../i/new_20090512/ul-slider-ball-ie6.png');
+    behavior: url('js/iepngfix.htc');
+}

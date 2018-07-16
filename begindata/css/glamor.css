@@ -1,0 +1,608 @@
+/* гламурный стиль с градиентными заливками */
+
+#wrapper #content {
+    background: #fff
+}
+
+/* списки */
+ul.dash2 {
+    list-style: none;
+}
+
+.dash2 li {
+    padding-left: 20px;
+    background: url('../i/dash0000.gif') no-repeat left 0.6em;
+    margin-bottom: 1em;
+}
+
+ul.dash-grey {
+    list-style: none;
+}
+
+ul.dash-grey li {
+    padding-left: 20px;
+    color: #4d4d4d;
+    background: url('../i/dash-gre.gif') no-repeat left 0.75em;
+}
+
+/* заголовки */
+h1.thin_blue {
+    color: #004D99;
+    font-size: x-large !important; /* наверно, лучше поставить 24px */
+    font-weight: lighter !important;
+    text-align: center;
+}
+
+h2.darkred {
+    color: #9e0b0f;
+    margin: 15px 0 15px 0;
+}
+
+h2.darkredmidi {
+    color: #9e0b0f;
+    font-size: 19px;
+}
+
+
+h2.darkredmini {
+    color: #9e0b0f;
+    font-size: 14px !important;
+    font-weight: bolder !important;
+    margin: 15px 0 15px 0;
+}
+
+h2.darkredmaxi {
+    color: #9e0b0f;
+    font-size: x-large !important; /* наверно, лучше поставить 24px */
+    font-weight: normal !important;
+    margin: 15px 0 15px 0;
+}
+
+
+h2.acidgreen {
+    color: #62b624;
+    font: normal 20px/18px Tahoma, DejaVu, sans-serif !important;
+}
+
+/* цвета */
+.rust { /* абзацы в примерах страхования, в новых макетах есть ссылки такого цвета */
+    color: #9e0b0f;
+}
+
+/* формы */
+.double_border {
+    border: 3px double #e4e4e4;
+    background: #fff;
+}
+
+/* разноцветные кружочки от 1 до 5б напр. категории */
+.cat1, .cat2, .cat3, .cat4, .cat5 {
+    display: block;
+    height: 21px;
+    width: 21px;
+    background-image: url('../i/categori.png');
+}
+.cat1 {background-position: 0 0;    }
+.cat2 {background-position: -21px 0;}
+.cat3 {background-position: -42px 0;}
+.cat4 {background-position: -63px 0;}
+.cat5 {background-position: -84px 0;}
+
+/* 3 корзинки, положить, изъять, неактивная */
+.cart-add, .cart-remove, .cart-disabled {
+   display: block;
+   width: 25px;
+   height: 25px;
+   background-image: url('../i/shop-car.png');
+   cursor: pointer;
+}
+.cart-add {      background-position: 0 0;     }
+.cart-remove {   background-position: 0 -25px; }
+.cart-disabled { background-position: 0 -50px; }
+
+/* стрелочки перехода по страницам: первая, предыдущия, следующая, последняя */
+.paginator {
+    text-align: center;
+}
+.paginator .prev, .paginator .next, .paginator .first, .paginator .last {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 2px;
+    text-decoration: none;
+    height: 14px;
+    width: 21px;
+}
+.paginator .prev,  .paginator .next { background: url('../i/result-p.png') no-repeat;       }
+.paginator .first, .paginator .last { background: url('../i/result-p.png') no-repeat; }
+.paginator .first, .paginator .prev { background-position: 0 0;     }
+.paginator .last,  .paginator .next { background-position: -21px 0; }
+
+/* вертикальные градиенты типа /newdomain/choose */
+.vgradient-azure2 {
+    width: 100%;
+    background: url('../i/vgradien.gif') repeat-x top;
+    border-collapse: collapse;
+}
+.vgradient-azure2_left {
+    padding: 0;
+    width: 7px;
+    min-width: 7px;
+    background: url('../i/vgradien.gif') no-repeat left top;
+}
+.vgradient-azure2_right {
+    padding: 0;
+    width: 7px;
+    min-width: 7px;
+    background: url('../i/vgradien.gif') no-repeat right top;
+}
+
+.vgradient-rose_left {
+    padding: 0;
+    width: 7px;
+    min-width: 7px;
+    background: #fff url('../i/vgradien.png') no-repeat left top;
+}
+
+.vgradient-rose_right {
+    padding: 0;
+    width: 7px;
+    min-width: 7px;
+    background: #fff url('../i/vgradien.png') no-repeat left top;
+}
+
+.vgradient-rose_content {
+    background: #fff url('../i/vgradien.png') repeat-x;
+}
+
+.vgradient-azure2_content {
+    background: #fff url('../i/vgradien.png') repeat-x;
+}
+
+/****
+таблицы со скругленными углами
+****/
+
+/* салатовая заливка */
+.salad_border {
+    max-height: 2000px;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+.salad_border .fill {
+    background: #e9f3ca;
+    padding: 0 7px;
+}
+
+.salad_border .lt, .salad_border .rt, .salad_border .lb, .salad_border .rb {
+    width: 9px !important;
+    min-width: 9px;
+    padding: 9px 0 0 0 !important;
+    height: auto;
+    background: url('../i/salad-bo.gif') no-repeat;
+    font-size: 0;
+}
+
+.salad_border .lt { background-position: 0 top !important;        }
+.salad_border .rt { background-position: -9px top !important;     }
+.salad_border .lb { background-position: -18px bottom !important; }
+.salad_border .rb { background-position: -27px bottom !important; }
+
+.salad_border a { /* возможно, стоит перенести на все страницы, где встречается, или задать класс */
+    color: #003d6c;
+}
+
+/* салатовая заливка с затененными верхом и низом - только insurance-calc */
+.salad_border2 {
+    max-height: 2000px;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+.salad_border2 .top {
+    background: #e9f3ca url('../i/salad-bp.gif') repeat-x left top;
+}
+
+.salad_border2 .bottom {
+    background: #e9f3ca url('../i/salad-bp.gif') repeat-x left bottom;
+}
+
+.salad_border2 .lt, .salad_border2 .rt, .salad_border2 .lb, .salad_border2 .rb {
+    width: 10px;
+    min-width: 10px;
+    padding: 10px 0;
+    background: url('../i/salad-bp.gif') no-repeat;
+}
+
+.salad_border2 .lt {background-position: 0 top;       }
+.salad_border2 .rt {background-position: -10px top;   }
+.salad_border2 .lb {background-position: -20px bottom;}
+.salad_border2 .rb {background-position: -30px bottom;}
+
+/* серый бордер, белый фон */
+
+.grey_border {
+    max-height: 2000px;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+.grey_border .fill {
+    background: #fff !important;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 0;
+}
+
+.grey_border .lt, .grey_border .rt, .grey_border .lb, .grey_border .rb {
+    width: 8px;
+    min-width: 8px;
+    padding: 8px 0 0 0 !important;
+    background: url('../i/grey-bor.png') no-repeat !important;
+    font-size: 0;
+    border: 0px none !important;
+}
+
+.grey_border .lt { background-position: 0 top !important;        }
+.grey_border .rt { background-position: -8px top !important;     }
+.grey_border .lb { background-position: -16px bottom !important; }
+.grey_border .rb { background-position: -24px bottom !important; }
+
+    /* добавить стоило бы, используется в online express, магазине доменов и т.п. */
+    /*
+    соответствующие правила можно убрать из:
+    - http://www.reg.ru/help/jservice (там картинка grey_border-side.gif - копия нижеуказанной)
+    - http://www.reg.ru/support/oexpress - там левая и правая границы бордерами, и потому - корявы
+    - собственно, из choose_result тоже убрать
+    */
+.grey_border .t {border-top: 1px solid #e9e9e9 !important; }
+.grey_border .b {border-bottom: 1px solid #e9e9e9 !important; }
+
+.grey_border .l, .grey_border .r {
+    padding: 8px 0 0 0 !important;
+    width: 8px;
+    min-width: 8px;
+}
+
+.grey_border .l, .grey_border .r {
+    border-left: 0px none !important;
+    border-right: 0px none !important;
+    background-image: url('../i/grey-bor.gif'); /* картинка есть в верстке choose_result */
+    background-repeat: repeat-y;
+}
+.grey_border .l {background-position: 0 0;}
+.grey_border .r {background-position: 7px 0;}
+    /* / добавить стоило бы */
+
+/* поискать где, если уже нету -- удалить */
+.grey_border_azure_grad {
+    max-height: 2000px;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+.grey_border_azure_grad .fill {
+    background: #fff url('../i/grey_bor.gif') repeat-x 0 0;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 0;
+}
+.grey_border_azure_grad .lt, .grey_border_azure_grad .rt, .grey_border_azure_grad .lb, .grey_border_azure_grad .rb {
+    width: 8px;
+    padding: 8px 0 0 0;
+    height: auto;
+    background: #fff url('../i/grey_bor.png') no-repeat !important;
+    font-size: 0;
+}
+
+.grey_border_azure_grad .lt {
+    background-position: 0 top !important;
+    padding-top: 84px;
+}
+.grey_border_azure_grad .rt { background-position: -8px top !important;     }
+.grey_border_azure_grad .lb { background-position: -16px bottom !important; }
+.grey_border_azure_grad .rb { background-position: -24px bottom !important; }
+
+
+/*  серо-синяя заливка внутри */
+.grey_lil_fill {
+    border-collapse: collapse;
+    empty-cells: show;
+}
+.grey_lil_fill .lt, .grey_lil_fill .rt, .grey_lil_fill .lb, .grey_lil_fill .rb {
+    font-size: 0;
+    width: 4px !important;
+    min-width: 4px;
+    padding: 4px 0 0 0 !important;
+    border: 0px none !important;
+    background: url('../i/grey_lil.png') no-repeat !important;
+}
+.grey_lil_fill .lt {background-position: 0 0 !important;}
+.grey_lil_fill .rt {background-position: -4px 0 !important;}
+.grey_lil_fill .lb {background-position: -8px 100% !important;}
+.grey_lil_fill .rb {background-position: -12px 100% !important;}
+.grey_lil_fill .fill {
+    background: #eaeff5 !important;
+    border: 0px none !important;
+}
+
+
+/* серый бордер, призрачно оранжевая заливка - только insurance examples */
+.lite-orange {
+    border-collapse: collapse;
+    border: 0px none;
+    empty-cells: show;
+}
+
+.lite-orange .lt, .lite-orange .rt, .lite-orange .lb, .lite-orange .rb {
+    background: url('../i/lite-ora.png') no-repeat;
+    width: 10px;
+    min-width: 10px;
+    padding: 10px 0 0 0 !important;
+}
+
+.lite-orange .lt {background-position: 0 0;       }
+.lite-orange .rt {background-position: -10px 0;   }
+.lite-orange .lb {background-position: -20px 100%;}
+.lite-orange .rb {background-position: -30px 100%;}
+
+.lite-orange .fill {
+    background: #faf4ed url('../i/lite-ora.gif') repeat-x 0 0;
+}
+
+/* голубая заливка, без правых углов - прижимать к правому краю
+   встречается пару раз вроде
+*/
+.blue_border {
+    position: relative;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+
+.blue_border .top {
+    height: 10px;
+    padding: 0 10px;
+    font-size: 0;
+    background: url('../i/blue_bor.png') no-repeat 0 0;
+}
+
+.blue_border .bottom {
+    height: 10px;
+    padding: 0 10px;
+    font-size: 0;
+    background: url('../i/blue_bor.png') no-repeat 0 -10px;
+}
+
+.blue_border .sub_top {
+    height: 10px;
+    padding: 0 10px;
+    font-size: 0;
+    background: url('../i/blue_bor.png') no-repeat 0 -20px;
+}
+
+.blue_border .sub_bottom {
+    height: 10px;
+    padding: 0 10px;
+    font-size: 0;
+    background: url('../i/blue_bor.png') no-repeat 0 -30px;
+}
+
+.blue_border .fill {
+    padding: 0 10px;
+    background: url('../i/blue_bor.gif') repeat-y left top;
+}
+
+.blue_border .sub_fill {
+    padding: 0 10px;
+    background: url('../i/blue_bor.gif') repeat-y right top;
+}
+
+.blue_border .header {
+    color: #333300 !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+}
+
+/* голубая заливка, сдвоенные бордеры - только newdomain/choose */
+.blue_border2 {
+    border-collapse: separate;
+    border-spacing: 0;
+    empty-cells: show;
+}
+
+.blue_border2 a {
+    color: #013968;
+}
+
+.blue_border2 td, .blue_border2 th {
+    background: #edf5fa;
+    border-top: 1px solid #fafcfe;
+    border-bottom: 1px solid #d5ecfa;
+    padding: 8px 5px;
+}
+
+.blue_border2 .top {
+    border-top-color: #d5ecfa;
+}
+
+.blue_border2 .lt, .blue_border2 .rt, .blue_border2 .lb, .blue_border2 .rb {
+   width: 4px;
+   min-width: 4px;
+   max-width: 4px;
+   padding: 8px 2px;
+   background: url('../i/blue-bor.png') no-repeat;
+}
+
+.blue_border2 .lt {
+    background-position: 0 top;
+    border-top: 0px none;
+}
+
+.blue_border2 .rt {
+    background-position: -8px top;
+    border-top: 0px none;
+}
+
+.blue_border2 .lb {
+    background-position: -16px bottom;
+    border-bottom: 0px none;
+}
+
+.blue_border2 .rb {
+    background-position: -24px bottom;
+    border-bottom: 0px none;
+}
+
+.blue_border2 .left, .blue_border2 .right {
+    width: 7px;
+    padding: 8px 0;
+}
+
+.blue_border2 .left {
+    border-left: 1px solid #d5ecfa;
+}
+
+.blue_border2 .right {
+    border-right: 1px solid #d5ecfa;
+}
+
+/* голубая заливка */
+.blue_border3 {
+    border-collapse: collapse;
+    empty-cells: show;
+    max-height: 2000px;
+}
+
+.blue_border3 .fill {
+    background: #eef5fa;
+    border-top: 1px solid #d5ecfa;
+    border-bottom: 1px solid #d5ecfa;
+    padding: 0;
+}
+.blue_border3 .lt, .blue_border3 .rt, .blue_border3 .lb, .blue_border3 .rb {
+    width: 7px;
+    min-width: 7px;
+    padding: 7px 0 0 0 !important;
+    height: auto;
+    background: url('../i/blue-boq.png') no-repeat;
+    font-size: 0;
+}
+
+.blue_border3 .lt { background-position: 0 top !important;        }
+.blue_border3 .rt { background-position: -7px top !important;     }
+.blue_border3 .lb { background-position: -14px bottom !important; }
+.blue_border3 .rb { background-position: -21px bottom !important; }
+
+.blue_border3 .b {
+    background: #eef5fa;
+    border-bottom: 1px solid #d5ecfa;
+}
+
+/* голубой бордер, белая заливка */
+.blue_border4 {
+    border-collapse: collapse;
+    empty-cells: show;
+    max-height: 1000px;
+}
+.blue_border4 .fill {
+    background: #fff;
+    border-top: 1px solid #d5ecfa;
+    border-bottom: 1px solid #d5ecfa;
+}
+.blue_border4 .lt, .blue_border4 .rt, .blue_border4 .lb, .blue_border4 .rb {
+    width: 6px;
+    min-width: 6px;
+    padding: 6px 0 0 0;
+    background: url('../i/blue-bot.png') no-repeat;
+    font-size: 0;
+}
+.blue_border4 .lt { background-position: 0 top !important;        }
+.blue_border4 .rt { background-position: -6px top !important;     }
+.blue_border4 .lb { background-position: -12px bottom !important; }
+.blue_border4 .rb { background-position: -18px bottom !important; }
+
+/* оранжевый бордер - пока только online express */
+.orange_border {
+    border-collapse: collapse;
+    empty-cells: show;
+    max-height: 2000px;
+}
+
+.orange_border .fill {
+    background: #fff;
+    border-top: 1px solid #fed5b2;
+    border-bottom: 1px solid #fed5b2;
+    padding: 0;
+}
+.orange_border .lt, .orange_border .rt, .orange_border .lb, .orange_border .rb {
+    width: 12px;
+    min-width: 12px;
+    padding: 12px 0 0 0;
+    height: auto;
+    background: url('../i/orange-b.png') no-repeat;
+    font-size: 0;
+}
+
+.orange_border .lt { background-position: 0 top;}
+.orange_border .rt { background-position: -12px top;}
+.orange_border .lb { background-position: -24px bottom; }
+.orange_border .rb { background-position: -36px bottom; }
+
+/* white popup with shadow */
+.white_popup {
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: transparent none;
+    max-height: 2000px;
+    max-width: 2000px;
+}
+
+.white_popup .fill {background: #fff;}
+.white_popup .lt, .white_popup .rt, .white_popup .lb, .white_popup .rb {
+    background-image: url('../i/new_20090512/white-popup-corners.png');
+    background-repeat: no-repeat;
+}
+
+.white_popup .lt {
+    padding: 9px 0 0 0 !important;
+    width: 16px !important;
+    background-position: 0 0 !important;
+}
+
+.white_popup .rt {
+    padding: 9px 0 0 0 !important;
+    width: 23px !important;
+    background-position: -16px 0 !important;
+}
+
+.white_popup .lb {
+    padding: 18px 0 0 0 !important;
+    width: 16px !important;
+    background-position: -39px 100% !important;
+}
+
+.white_popup .rb {
+    padding: 18px 0 0 0 !important;
+    width: 23px !important;
+    background-position: -55px 100% !important;
+}
+
+.white_popup .t, .white_popup .b, .white_popup .b-r {
+    background: url('../i/new_20090512/white-popup-sides.png') no-repeat;
+}
+
+.white_popup .t {
+    padding: 9px 0 0 0 !important;
+    background-position: 0 0;
+}
+
+.white_popup .b {
+    padding: 18px 100px 0 0 !important;
+    background-position: 0 -9px;
+}
+
+.white_popup .b-r {
+    padding: 18px 100px 0 0 !important;
+    background-position: 100% -27px;
+}
+

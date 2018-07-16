@@ -1,0 +1,16 @@
+#whois_dom_top label {
+    filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1, Color='#003c64', Positive='true');
+}
+
+#header_top #header_options a {
+    filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=-1, Color='#272727', Positive='true');
+}
+
+#regru-description h2 {
+    filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color='#ffffff', Positive='true');
+}
+
+#header-password {
+    padding-right: 2.2em;
+}
+
